@@ -24,7 +24,7 @@ int main(void)
     print_dlistint(head);
     printf("-----------------\n");
 
-    if (head)
+    while (head)
     {
         delete_dnodeint_at_index(&head, 5);
         print_dlistint(head);
@@ -52,7 +52,7 @@ int main(void)
         printf("-----------------\n");
         delete_dnodeint_at_index(&head, 0);
     }
-    else
+    if(!head)
     {
         printf("List is empty\n");
     }
